@@ -1,5 +1,5 @@
 const express = require("express");
-const rateLimit = require("./lib/rateLimit");
+const rateLimit = require("./rate-limit.cjs");
 
 // Create an instance of the express application
 const app = express();

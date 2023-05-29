@@ -1,3 +1,11 @@
+/**
+ * A function that implements rate limiting middleware for incoming requests.
+ *
+ * @param {number} limit - The maximum number of requests allowed in the given interval.
+ * @param {number} interval - The time interval (in ms) during which max number of requests are allowed.
+ * @param {number} timeout - The time (in ms) after which the rate-limit counter is reset.
+ * @return {Function} - Middleware function that rate-limits incoming requests.
+ */
 const rateLimit = (limit, interval, timeout) => {
   const cache = {};
 

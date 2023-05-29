@@ -1,11 +1,18 @@
+const expressRateLimit = require("express-rate-limit");
+const rateLimitSpider = require("./rate-limit.cjs");
+
 const Benchmark = require("benchmark");
 const suite = new Benchmark.Suite();
 
-const rateLimit = require("./lib/rateLimit");
+suite.add("express-rate-limit", () => {
+  expressRateLimit({
+    windowMs: 60 * 1000, // 1 minute
+    max: 100, // Max requests per minute
+  });
+});
 
-// Add the test
-suite.add("rateLimit", function () {
-  rateLimit(10, 1000, 5000);
+suite.add("express-rate-limit-spider", function () {
+  rateLimitSpider(60, 100, 5000);
 });
 
 // Run the test

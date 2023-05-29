@@ -1,20 +1,14 @@
 {
   "name": "express-rate-limit-spider",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "A middleware for rate limiting web crawling or spidering activities in Express applications.",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },
+  "main": "rate-limit.cjs",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "benchmark": "^2.1.4",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0"
   }
 }
