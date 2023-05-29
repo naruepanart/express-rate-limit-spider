@@ -6,7 +6,7 @@ const app = express();
 
 // Apply rate limiting middleware
 // Set the number of allowed requests before rate limiting kicks in
-const REQUESTS_PER_LIMIT = 5;
+const REQUESTS_PER_LIMIT = 2;
 // Set the duration of the rate limit window in milliseconds
 const LIMIT_DURATION_MS = 5000;
 // Set the duration of the rolling window in milliseconds
