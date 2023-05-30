@@ -5,14 +5,22 @@ const Benchmark = require("benchmark");
 const suite = new Benchmark.Suite();
 
 suite.add("express-rate-limit", () => {
-  expressRateLimit({
-    windowMs: 60 * 1000, // 1 minute
-    max: 100, // Max requests per minute
-  });
+  const options = {
+    windowMs: 60 * 1000,
+    max: 100,
+  };
+  expressRateLimit(options);
 });
 
 suite.add("express-rate-limit-spider", function () {
-  rateLimitSpider(60, 100, 5000);
+  const timeWindowInSeconds = 60;
+  const maxRequestsPerTimeWindow = 100;
+  const delayAfterMaxRequestsInMilliseconds = 5000;
+  rateLimitSpider(
+    timeWindowInSeconds,
+    maxRequestsPerTimeWindow,
+    delayAfterMaxRequestsInMilliseconds
+  );
 });
 
 // Run the test

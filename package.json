@@ -1,10 +1,23 @@
 {
   "name": "express-rate-limit-spider",
-  "version": "1.0.6",
-  "description": "A middleware for rate limiting web crawling or spidering activities in Express applications.",
+  "version": "1.0.7",
+  "description": "A middleware for rate limiting in ExpressJS.",
   "main": "rate-limit.cjs",
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "dev": "node example.js",
+    "benchmark": "node benchmark.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naruepanart/express-rate-limit-spider.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "cache"
+  ],
+  "author": "https://github.com/naruepanart",
+  "homepage": "https://github.com/naruepanart/express-rate-limit-spider#readme",
   "license": "MIT",
   "dependencies": {
     "benchmark": "^2.1.4",

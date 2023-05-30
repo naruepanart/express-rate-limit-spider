@@ -2,11 +2,12 @@
 
 express-rate-limit-spider is a middleware for rate limiting web crawling or spidering activities in Express applications. It allows you to restrict the number of requests made by web crawlers within a specified time interval, helping to prevent excessive crawling and protect your server resources.
 
-Benchmarks: Fastest is express-rate-limit-spider
+Benchmarks: 
 
 - express-rate-limit x 222,950 ops/sec ±29.79% (63 runs sampled)
 - express-rate-limit-spider x 504,694,760 ops/sec ±0.41% (90 runs sampled)
 
+Fastest is express-rate-limit-spider
 
 ## Installation
 
