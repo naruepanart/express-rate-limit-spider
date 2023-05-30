@@ -7,18 +7,21 @@
     "dev": "node example.js",
     "benchmark": "node benchmark.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/naruepanart/express-rate-limit-spider.git"
-  },
   "keywords": [
     "express",
     "middleware",
     "cache"
   ],
   "author": "https://github.com/naruepanart",
-  "homepage": "https://github.com/naruepanart/express-rate-limit-spider#readme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naruepanart/express-rate-limit-spider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naruepanart/express-rate-limit-spider/issues"
+  },
+  "homepage": "https://github.com/naruepanart/express-rate-limit-spider#readme",
   "dependencies": {
     "benchmark": "^2.1.4",
     "express": "^4.18.2",
